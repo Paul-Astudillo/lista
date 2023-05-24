@@ -1,0 +1,50 @@
+
+<div class="formulario">
+  <mat-form-field class="example-form-field">
+    <mat-label>Nombre</mat-label>
+    <input matInput type="text" [(ngModel)]="persona.nombre" [(ngModel)]="nombre">
+
+    <button *ngIf="nombre" matSuffix mat-icon-button aria-label="Clear" (click)="nombre=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <br>
+  <mat-form-field class="example-form-field">
+    <mat-label>Direccion</mat-label>
+    <input matInput type="text" [(ngModel)]="persona.direccion" [(ngModel)]="direccion">
+    <button *ngIf="direccion" matSuffix mat-icon-button aria-label="Clear" (click)="direccion=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+
+  <br>
+  <mat-form-field class="example-form-field">
+    <mat-label>Cedula</mat-label>
+    <input matInput type="text" [(ngModel)]="persona.cedula"  [(ngModel)]="cedula">
+    <button *ngIf=" cedula" matSuffix mat-icon-button aria-label="Clear" (click)=" cedula=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+
+  <br>
+  <mat-form-field class="example-form-field">
+    <mat-label>Edad</mat-label>
+    <input matInput type="text"  [(ngModel)]="persona.edad" [(ngModel)]="edad">
+    <button *ngIf=" edad" matSuffix mat-icon-button aria-label="Clear" (click)=" edad=''">
+      <mat-icon>close</mat-icon>
+    </button>
+
+  </mat-form-field>
+  <br>
+  <button matInput class="boton" (click)="guardar()">Enviar</button> 
+  <br>
+
+
+  </div>
+
+
+
+
